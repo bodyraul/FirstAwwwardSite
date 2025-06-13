@@ -3,7 +3,7 @@ const tabText =["We are hiring talented, motivated people ready to grow, innovat
                     ,"Our integrated search technology delivers fast, relevant results across platforms, helping users find what they need with speed, ease, and precision. "
                     ,"We help you build high-performing teams by connecting you with skilled professionals who align with your goals, culture, and long-term vision."
                     ,"Staying attentive at work drives smarter decisions, stronger collaboration, and a culture of care that empowers teams to grow, innovate, and succeed together."
-                    ," We keep your pipeline full with qualified leads, ensuring consistent growth, better forecasting, and a steady flow of opportunities for your business."]
+                    ," We keep your process full with qualified leads, ensuring consistent growth, better forecasting, and a steady flow of opportunities for your business."]
 
  export default tabText;
 

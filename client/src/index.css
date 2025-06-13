@@ -195,6 +195,16 @@ body {
     
 }
 
+.animApparitionimgVideo{
+      animation: animApparitionimgVideo 0.7s forwards ease-out;
+}
+
+@keyframes animApparitionimgVideo {
+    0%{  transform: translateY(-80%);opacity: 0;}
+    100%{  transform: translateY(0%);opacity: 1;}
+    
+}
+
 .informationGradientAnim{
       animation: animeUnePageUne 0.8s forwards   ease-out;
 }

@@ -1,10 +1,10 @@
 import React from 'react'
-import serviceUn from "../assets/images/services-icons-1b-white.svg"
-import serviceDeux from "../assets/images/services-icons-2b-white.svg"
-import serviceTrois from "../assets/images/services-icons-3b-white.svg"
-import serviceQuatre from "../assets/images/services-icons-4b-white.svg"
-import serviceCinq from "../assets/images/services-icons-5b-white.svg"
-import serviceSix from "../assets/images/services-icons-6b-white.svg"
+import pingpong from "../assets/images/pingpong.png"
+import cercleCarrer from "../assets/images/cercleCarrer.png"
+import cuillere from "../assets/images/cuillere.png"
+import oeil from "../assets/images/oeil.png"
+import main from "../assets/images/main.png"
+import train from "../assets/images/trains.png"
 import { useEffect } from 'react'
 import BarreComponent from '../componentReutilisable/WorkComponent/BarreComponent'
 import TitreWorkComponent from '../componentReutilisable/WorkComponent/TitreWorkComponent'
@@ -69,22 +69,21 @@ export default function Work() {
                     <TitreWorkComponent>Work</TitreWorkComponent>               
                 </div>
                 <div  className="introText fontDomine supp510:text-[15px] supp510:leading-[35px] supp860:text-[20px] supp860:w-full supp1500:text-[31px] supp1500:leading-[46px] supp1500:px-[180px] text-[13px] leading-[25px] w-[85%] text-belge py-0 px-[10px] text-center">
-                    After countless conversations with job seekers and clients, its clear there is more
-                    than one method required to support our partners. As the needs of our network evolve, so do we.
+                    Following numerous talks with candidates and clients, it’s evident that multiple approaches are necessary to assist our partners. As our network needs change and grow.
                 </div>
             </div>
             <div className="supp1500:h-[76%] h-[85%] w-full flex flex-col items-center justify-evenly  ">
                 <div id="sous-div-une"  className="allSousDiv supp1500:w-[90%] supp1500:mb-[50px] supp860:flex-row supp1500:items-start supp1500:justify-around flex flex-col items-center justify-evenly h-[33.3%] w-full mb-0 transform translate-y-[-40%] opacity-0">
-                    <DivImgTextWorkCompont alt="représente une raquette blanche." texte="Full-Time Search" src={serviceUn} tab={TabWork[0]} ></DivImgTextWorkCompont>
-                    <DivImgTextWorkCompont alt="représente des symboles blancs. On y voit nottament un carré, un triangle et un rond." texte="Freelancer Placement" src={serviceDeux} tab={TabWork[1]} ></DivImgTextWorkCompont>
+                    <DivImgTextWorkCompont alt="représente une raquette blanche." texte="Complete search" src={pingpong} tab={TabWork[0]} ></DivImgTextWorkCompont>
+                    <DivImgTextWorkCompont alt="représente des symboles blancs. On y voit nottament un carré, un triangle et un rond." texte="Contractor sourcing" src={cercleCarrer} tab={TabWork[1]} ></DivImgTextWorkCompont>
                 </div>
                 <div className=" allSousDiv supp1500:w-[90%] supp1500:mb-[50px] supp860:flex-row supp1500:items-start supp1500:justify-around flex flex-col items-center justify-evenly h-[33.3%] w-full mb-0 transform translate-y-[-40%] opacity-0  ">
-                    <DivImgTextWorkCompont alt="représente trois ronds blancs et une petite feuille blanche." texte="Embedded Search" src={serviceTrois} tab={TabWork[2]}  ></DivImgTextWorkCompont>
-                     <DivImgTextWorkCompont alt="représente deux yeux blancs et une oreile blanche." texte="Team Constitution" src={serviceQuatre} tab={TabWork[3]}  ></DivImgTextWorkCompont>
+                    <DivImgTextWorkCompont alt="représente trois ronds blancs et une petite feuille blanche." texte="Integrated search" src={cuillere} tab={TabWork[2]}  ></DivImgTextWorkCompont>
+                     <DivImgTextWorkCompont alt="représente deux yeux blancs et une oreile blanche." texte="Group formation" src={oeil} tab={TabWork[3]}  ></DivImgTextWorkCompont>
                 </div>
                 <div className="allSousDiv supp1500:w-[90%] supp1500:mb-[50px] supp860:flex-row supp1500:items-start supp1500:justify-around flex flex-col items-center justify-evenly h-[33.3%] w-full mb-0 transform translate-y-[-40%] opacity-0  ">
-                    <DivImgTextWorkCompont alt="représente cinq ronds blancs relié par un fils blanc le tout formant un cercle." texte="Eyes and Ears" src={serviceCinq} tab={TabWork[4]}  ></DivImgTextWorkCompont>
-                    <DivImgTextWorkCompont alt="représente une locomotive blanche." texte="Pipeline" src={serviceSix} tab={TabWork[5]}  ></DivImgTextWorkCompont>
+                    <DivImgTextWorkCompont alt="représente cinq ronds blancs relié par un fils blanc le tout formant un cercle." texte="Senses and signals" src={main} tab={TabWork[4]}  ></DivImgTextWorkCompont>
+                    <DivImgTextWorkCompont alt="représente une locomotive blanche." texte="Process" src={train} tab={TabWork[5]}  ></DivImgTextWorkCompont>
                 </div>
             </div>
         </div>
