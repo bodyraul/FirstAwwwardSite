@@ -1,36 +1,14 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { useRef } from 'react'
 import tab from "../assets/images/tab.jpg"
+import UseAnimScrollVideo from '../CustomHoocks/video/UseAnimScrollVideo'
+import scrollAnimVideo from '../fonction/video/ScrollAnimVideo'
 
 export default function Video() {
 
     const titreContainerQuatre = useRef("");const containerTitrePageQuatre = useRef("");const containerContenuTitrePageQuatre = useRef("");const containerContenuTextePageQuatre = useRef("");const containPrincipaleDeuxPQuatre = useRef("");const containerImg = useRef("");
 
-    const onScroll=()=>{
-    const hauteurEcran = window.innerHeight*78/100;
-    const hauteurDivContainerQuatre = containerTitrePageQuatre.current.getBoundingClientRect().top;
-    if(hauteurDivContainerQuatre<=hauteurEcran){
-        titreContainerQuatre.current.classList.add('animApparitionTexteContainerQuatre');
-        setTimeout(() => {
-            containerContenuTitrePageQuatre.current.classList.add('animApparitionTexteContainerQuatreDeux');
-        }, 150);
-        setTimeout(() => {
-            containerContenuTextePageQuatre.current.classList.add('animApparitionTexteContainerQuatreDeux');
-        }, 300);
-        setTimeout(() => {
-            containerImg.current.classList.add('animApparitionimgVideo');
-        }, 600);
-    }
-    }
-    
-    useEffect(() => {
-      window.addEventListener("scroll",onScroll);
-    
-      return () => {
-        window.removeEventListener("scroll",onScroll);
-      }
-    }, [])
+    UseAnimScrollVideo(()=>scrollAnimVideo(containerTitrePageQuatre,titreContainerQuatre,containerContenuTitrePageQuatre,containerContenuTextePageQuatre,containerImg));
     
 
   return (

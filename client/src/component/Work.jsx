@@ -5,57 +5,15 @@ import cuillere from "../assets/images/cuillere.png"
 import oeil from "../assets/images/oeil.png"
 import main from "../assets/images/main.png"
 import train from "../assets/images/trains.png"
-import { useEffect } from 'react'
 import BarreComponent from '../componentReutilisable/WorkComponent/BarreComponent'
 import TitreWorkComponent from '../componentReutilisable/WorkComponent/TitreWorkComponent'
 import DivImgTextWorkCompont from '../componentReutilisable/WorkComponent/DivImgTextWorkCompont'
 import TabWork from '../tools/TabWork.js'
+import UseAnimScrollWork from '../CustomHoocks/work/UseAnimScrollWork.jsx'
 
 export default function Work() {
 
-    const scrollUn=()=>{
-        const introText = document.querySelector('.introText');
-        const barAnim = document.querySelectorAll('.barre');
-        let tailleEcran = window.innerHeight;
-            let situerEnteteTroisemeContainer = introText.getBoundingClientRect().top;
-            if(situerEnteteTroisemeContainer>=tailleEcran*75/100){
-                barAnim.forEach(element => {
-                    element.style.height="0px";
-                    element.classList.remove('animBarreTroisiemeContainer');
-                    element.classList.add('animBarreTroisiemeContainerDeux');
-                });
-                
-            }
-
-            if(situerEnteteTroisemeContainer<=tailleEcran*75/100){
-                barAnim.forEach(element => {
-                    element.style.height="3px";
-                    element.classList.remove('animBarreTroisiemeContainerDeux');
-                    element.classList.add('animBarreTroisiemeContainer');
-                });
-                
-            }
-    }
-    const scrollDeux=()=>{
-        const allSousDiv =document.querySelectorAll('.allSousDiv');
-         let tailleEcran = window.innerHeight;
-            allSousDiv.forEach(element => {
-                if(element.getBoundingClientRect().top<=tailleEcran*60/100){
-                    element.classList.add('animSousDiv');
-                }
-        });
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll',scrollUn);
-        window.addEventListener('scroll',scrollDeux);
-
-        return () => {
-         window.removeEventListener('scroll',scrollUn);
-        window.removeEventListener('scroll',scrollDeux);
-      }
-    }, [])
-    
+    UseAnimScrollWork();
 
   return (
     <div className="supp860:h-[1900px] h-[2500px] w-screen bg-orangeMarron flex items-center justify-center ">
