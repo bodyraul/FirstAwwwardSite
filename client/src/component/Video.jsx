@@ -3,10 +3,12 @@ import { useRef } from 'react'
 import tab from "../assets/images/tab.jpg"
 import UseAnimScrollVideo from '../CustomHoocks/video/UseAnimScrollVideo'
 import scrollAnimVideo from '../fonction/video/ScrollAnimVideo'
+import SpanVideo from '../componentReutilisable/VideoComponent/SpanVideo'
 
 export default function Video() {
 
-    const titreContainerQuatre = useRef("");const containerTitrePageQuatre = useRef("");const containerContenuTitrePageQuatre = useRef("");const containerContenuTextePageQuatre = useRef("");const containPrincipaleDeuxPQuatre = useRef("");const containerImg = useRef("");
+    const titreContainerQuatre = useRef("");const containerTitrePageQuatre = useRef("");const containerContenuTitrePageQuatre = useRef("");
+    const containerContenuTextePageQuatre = useRef("");const containPrincipaleDeuxPQuatre = useRef("");const containerImg = useRef("");
 
     UseAnimScrollVideo(()=>scrollAnimVideo(containerTitrePageQuatre,titreContainerQuatre,containerContenuTitrePageQuatre,containerContenuTextePageQuatre,containerImg));
     
@@ -24,9 +26,9 @@ export default function Video() {
         <div className="supp456:h-[1150px] supp1274:w-[1200px] h-[1000px] w-[90%] border-[4px] border-bleuGris my-0 mx-auto rounded-[30px] ">
             <div ref={containerTitrePageQuatre} className="supp456:h-[50%] supp610:h-[30%] supp1061:h-[25%] supp1061:flex-row  h-[65%] w-full flex flex-col items-center justify-evenly border-b-[2px] border-b-bleuGris ">
                 <p ref={containerContenuTitrePageQuatre} className="supp456:px-[25px] supp456:py-[10px] supp456:w-[90%] supp456:text-[40px] supp1061:text-[60px] supp1274:h-full supp1274:w-[50%] supp1274:text-[80px] text-[35px] w-full py-[80px] px-0 h-[40%] transform translate-y-[-100%] text-center tracking-[2px] opacity-0">
-                    <span className='font-bold text-bleuGris '>Leading tech,</span> <br/>
-                    <span className='fontUi text-bleuGris '>person</span> 
-                    <span className='font-bold text-bleuGris '>care</span>
+                    <SpanVideo boolean={true}>Leading tech,</SpanVideo> <br/>
+                    <SpanVideo boolean={false} >person</SpanVideo>
+                    <SpanVideo boolean={true} >care</SpanVideo>
                 </p>
                 <p ref={containerContenuTextePageQuatre} className="fontUi supp456:text-[15px] supp456:px-10px supp456:py-[35px] supp1061:w-[50%] supp1061:h-[100%] supp1274:text-[18px] supp1274:px-[50px] text-[13px] py-0 px-[10px] h-[70%] w-[90%] transform translate-y-[-100%] leading-[28px] tracking-[1px] font-medium text-bleuGris opacity-0">
                     A personal touch and careful curation remain at the heart of our identity. Leveraging deep industry and maker experience, we built a custom smart talent platform with automated profile recommendations, intelligent alerts, diversity filters, and more. Over ten years, 20,000+ profiles manually added and still expanding.

@@ -1,10 +1,10 @@
 import React from 'react'
-import LigneBareDefilement from '../componentReutilisable/globaleComponent/LigneBareDefilement'
 import imgStarDeux from "../assets/images/star-Deux.png"
 import welcome from "../assets/images/welcomeDeux.png"
 import vague from '../assets/images/logoVague.png'
 import ParaDisparition from '../componentReutilisable/introductionComponent/ParaDisparition'
 import UseAnimIntro from '../CustomHoocks/intro/UseAnimIntro'
+import Nav from './Nav'
 
 export default function PartieIntroduction() {
   
@@ -12,13 +12,7 @@ export default function PartieIntroduction() {
     
   return (
     <div className="bg-blancGris w-screen h-screen min-h-[1200px] flex flex-col">
-       <nav className='h-[46px] bg-orangeCLair w-[10000px] z-10 '>
-            <ul className='flex h-full no-underline'>
-               <LigneBareDefilement></LigneBareDefilement>
-               <LigneBareDefilement></LigneBareDefilement>
-               <LigneBareDefilement></LigneBareDefilement>
-            </ul>
-        </nav>
+        <Nav/>
         <img ref={imgStarRef} className='supp860:w-[110px] supp860:h-[110px]  supp510:h-[90px] supp510:w-[90px] supp691:left[90%] supp1700:top[130px] supp1700:left[215px] absolute top-[170px] left-[80%] z-[8] opacity-0 transition-transform duration-300 ease-linear h-[70px] w-[70px] ' src={imgStarDeux} alt=" forme d'étoile marron." />
         <div  className='supp1700:right[150px] absolute top-20 left-[5%] flex items-center justify-center h-[200px] w-[200px] z-[8]'>
             <div ref={containerLogo} className='w-full h-full relative opacity-0 transition-all duration-300 ease-linear'>

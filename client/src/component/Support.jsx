@@ -9,12 +9,12 @@ import onclickImg from '../fonction/support/OnClickImg'
 import UseAnimSupport from '../CustomHoocks/support/UseAnimSupport'
 
 export default function Support() {
-    const btnAnim = useRef();const firstSpan = useRef();const secondSpan = useRef();const titreSouligneUn=useRef();const titreSouligneDeux=useRef();const titreSouligneTrois=useRef();const titreSouligneCacheUn=useRef();const titreSouligneCacheDeux=useRef();const titreSouligneCacheTrois=useRef();const affichageInformation=useRef();
+    const btnAnim = useRef();const firstSpan = useRef();const secondSpan = useRef();const titreSouligneUn=useRef();const titreSouligneDeux=useRef();
+    const titreSouligneTrois=useRef();const titreSouligneCacheUn=useRef();const titreSouligneCacheDeux=useRef();const titreSouligneCacheTrois=useRef();const affichageInformation=useRef();
     const allTitreSouligne =[titreSouligneUn,titreSouligneDeux,titreSouligneTrois];
     const allTitreSouligneCache =[titreSouligneCacheUn,titreSouligneCacheDeux,titreSouligneCacheTrois];
     const [boolAnim, setboolAnim] = useState(true);
     const [boolInfo, setboolInfo] = useState(true);
-    
     const{divTechnologieEntreprise,supportBtnIntro,divDesigneBrand,divManagamentStartup}= UseAnimSupport();
 
   return (
