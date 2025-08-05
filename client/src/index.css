@@ -51,7 +51,7 @@ body {
 
 @keyframes animCuration {
   0% {
-    transform: translateY(0%);
+    transform: translateY(-5%);
     opacity: 1;
   }
   5% {
@@ -63,7 +63,7 @@ body {
     opacity: 0;
   }
   71%{
-    transform: translateY(0%);
+    transform: translateY(-5%);
     opacity: 1;
   }
 
@@ -210,8 +210,8 @@ body {
 }
 
 @keyframes animeUnePageUne {
-    0%{  transform: translateY(-900px) rotate(15deg);}
-    100%{  transform: translateY(0px) rotate(5deg);}
+    0%{  transform: translateY(-900px) translateX(-50%) rotate(15deg);}
+    100%{  transform: translateY(0px) translateX(-50%)  rotate(5deg);}
     
 }
 

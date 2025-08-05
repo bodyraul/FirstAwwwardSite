@@ -18,14 +18,14 @@ export default function Support() {
     const{divTechnologieEntreprise,supportBtnIntro,divDesigneBrand,divManagamentStartup}= UseAnimSupport();
 
   return (
-    <div style={{fontFamily:"Libre Baskerville"}} className='supp456:h-[1500px] w-screen h-[1200px] bg-blanc flex flex-col items-center justify-around '>
+    <div style={{fontFamily:"Libre Baskerville"}} className='supp480:h-[1200px] supp768:h-[1500px] supp1024:h-[1600px] w-screen h-[800px] bg-blanc flex flex-col items-center justify-around '>
         <div className='h-[160px] flex flex-col items-center justify-around  '>
-            <p ref={supportBtnIntro} className='supp550:text-3xl text-2xl font-thin transform translate-y-[-150px] opacity-0 transition-all duration-[0.4s] ease-out'>
+            <p ref={supportBtnIntro} className='supp480:text-[20px] supp768:text-[25px] supp1024:text-[30px] text-[15px] font-thin transform translate-y-[-150px] opacity-0 transition-all duration-[0.4s] ease-out'>
                 Who we assist
             </p>
-            <div  className='w-[270px] supp550:w-[350px] flex items-center justify-between h-[50px] relative py-[28px] px-[30px]  border-[3px] border-bleuGris rounded-[50px]  '>
+            <div  className='supp480:w-[250px] supp480:text-[15px] supp480:py-[20px] w-[200px] supp768:text-[18px] supp768:w-[300px] supp768:py-[25px] supp1024:text-[21px] supp1024:w-[330px] supp1024:py-[28px] flex items-center justify-between h-[35px] relative py-[0px] px-[25px] text-[10px]  border-[3px] border-bleuGris rounded-[50px]  '>
                 <p ref={btnAnim} className='absolute top-0 left-0 bg-bleuGris w-[55%] h-full rounded-[50px] text-grisClair flex items-center justify-center'>
-                    The talent
+                    The Skills
                 </p>
                 <BtnSpanSupport reference={firstSpan} click={()=>onclickSkill(boolAnim,btnAnim,firstSpan,secondSpan,allTitreSouligne,allTitreSouligneCache,setboolAnim)} text={"The Skills"} ></BtnSpanSupport>
                 <BtnSpanSupport reference={secondSpan} click={()=>onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,allTitreSouligne,allTitreSouligneCache,setboolAnim)} text={"The Users"} ></BtnSpanSupport>
@@ -35,10 +35,10 @@ export default function Support() {
         <DesignTechnoManagement refUne={divTechnologieEntreprise} refDeux={titreSouligneDeux} refTrois={titreSouligneCacheDeux} textUn={"Innovation "} textDeux="Business " ></DesignTechnoManagement>
         <DesignTechnoManagement refUne={divManagamentStartup} refDeux={titreSouligneTrois} refTrois={titreSouligneCacheTrois} textUn={"Leadership"} textDeux="Operation"  ></DesignTechnoManagement>
         <div className='relative'>
-            <div ref={affichageInformation}  style={{boxShadow:"rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"}} className='supp456:w-[350px] supp456:left-[-350%] supp550:w-[400px] supp550:top-[-400%] supp550:left-[-400%] w-[300px] top-[-500%] left-[-300%] absolute bg-white p-6 text-center text-xl text-grisTexte leading-[34px] rounded-[10px] transform rotate-[-3deg] opacity-0 transition-all duration-300 ease-in-out '>
+            <div ref={affichageInformation}  style={{boxShadow:"rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"}} className='supp480:text-[17px] supp480:leading-[25px] supp480:w-[350px] supp480:top-[-400%] supp480:left-[-480%] supp768:text-[20px] supp768:leading-[30px] supp768:w-[500px] supp768:left-[-550%] supp1024:text-[25px] supp1024:leading-[40px] supp1024:w-[700px] supp1024:left-[-800%] w-[230px] top-[-500%] left-[-360%] absolute bg-white p-6 text-center text-[12px] text-grisTexte leading-[20px] rounded-[10px] transform rotate-[-3deg] opacity-0 transition-all duration-300 ease-in-out '>
                 Say hello, we promise to always be truthful about what we prioritize, and what we avoid.
             </div>
-            <img onClick={()=>onclickImg(boolInfo,affichageInformation,setboolInfo)} className='hover:cursor-pointer' src={infoIcon} alt=" ronde et noire, avec un i au milieu faisant référence à information" />
+            <img onClick={()=>onclickImg(boolInfo,affichageInformation,setboolInfo)} className='supp480:size-[35px] supp768:size-[38px] size-[30px] hover:cursor-pointer' src={infoIcon} alt=" ronde et noire, avec un i au milieu faisant référence à information" />
         </div>
     </div>
   )
