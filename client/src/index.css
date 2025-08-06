@@ -129,7 +129,7 @@ body {
 
 
 .animBarreTroisiemeContainer {
-  animation: animBarreTroisiemeContainer 0.7s forwards ease-in-out;
+  animation: animBarreTroisiemeContainer 0.4s forwards ease-in-out;
 }
 
 @keyframes animBarreTroisiemeContainer {
@@ -142,7 +142,7 @@ body {
 }
 
 .animBarreTroisiemeContainerDeux {
-  animation: animBarreTroisiemeContainerDeux 0.5s forwards ease-in-out;
+  animation: animBarreTroisiemeContainerDeux 0.4s forwards ease-in-out;
 }
 
 @keyframes animBarreTroisiemeContainerDeux {
@@ -354,7 +354,7 @@ body {
 }
 
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1600px) {
   @keyframes animBarreTroisiemeContainer {
     0%{width: 0px;}
     100%{width: 150px;}
@@ -371,11 +371,11 @@ body {
 
     @keyframes animBarreTroisiemeContainer {
         0%{width: 0px;}
-        100%{width: 0px;}
+        100%{width: 40px;}
     }
 
     @keyframes animBarreTroisiemeContainerDeux {
-        0%{width: 0px;height: 4px;opacity: 1;}
+        0%{width: 40px;height: 4px;opacity: 1;}
         60%{opacity: 0;}
         100%{width: 0px;opacity: 0;}
     }
