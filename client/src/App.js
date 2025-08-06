@@ -1,18 +1,18 @@
 import React from 'react';
-import PartieIntroduction from './component/PartieIntroduction';
-import Support from './component/Support';
+import Introduction from './component/introductionComponent/Introduction';
+import Support from './component/supportComponent/Support';
 import { Fragment } from 'react';
-import Work from './component/Work';
-import Video from './component/Video';
+import Work from './component/workComponent//Work';
+import PartieVideo from './component/videoComponent/PartieVideo';
 
 function App() {
   return (
     
     <>
-      <PartieIntroduction></PartieIntroduction>
+      <Introduction></Introduction>
       <Support></Support>
       <Work></Work>
-      <Video></Video>
+      <PartieVideo></PartieVideo>
     </>
     
   );

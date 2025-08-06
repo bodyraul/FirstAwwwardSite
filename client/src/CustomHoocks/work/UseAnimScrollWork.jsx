@@ -9,7 +9,7 @@ export default function UseAnimScrollWork(){
             window.addEventListener('scroll',scrollDeux);
 
             return () => {
-                window.removeEventListener('scroll',scrollUn);
+            window.removeEventListener('scroll',scrollUn);
             window.removeEventListener('scroll',scrollDeux);
             }
         }, [])
