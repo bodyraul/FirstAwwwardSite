@@ -46,7 +46,7 @@ body {
 }
 
 .animCuration{
-  animation: animCuration 9s forwards 3s infinite ease-in-out;
+  animation: animCuration 6s forwards 2.5s infinite ease-in-out;
 }
 
 @keyframes animCuration {
@@ -77,7 +77,7 @@ body {
 }
 
 .animBuilding{
-  animation: animBuilding 9s forwards 3s infinite ease-in-out;
+  animation: animBuilding 6s forwards 2.5s infinite ease-in-out;
 }
 
 @keyframes animBuilding {
@@ -100,7 +100,7 @@ body {
 }
 
 .animConnecting{
-  animation: animConnecting 9s forwards 3s infinite ease-in-out;
+  animation: animConnecting 6s forwards 2.5s infinite ease-in-out;
 }
 
 @keyframes animConnecting {
@@ -206,17 +206,17 @@ body {
 }
 
 .informationGradientAnim{
-      animation: animeUnePageUne 0.8s forwards   ease-out;
+      animation: animeUnePageUne 0.4s forwards   ease-in-out;
 }
 
 @keyframes animeUnePageUne {
-    0%{  transform: translateY(-900px) translateX(-50%) rotate(15deg);}
-    100%{  transform: translateY(0px) translateX(-50%)  rotate(5deg);}
+    0%{ opacity: 0; transform: translateY(-200px) translateX(-50%) rotate(15deg);}
+    100%{opacity: 1;  transform: translateY(0px) translateX(-50%)  rotate(5deg);}
     
 }
 
 .fontAleatoireAnim{
-      animation: animeDeuxPageUne 0.8s forwards 0.2s   ease-out;
+      animation: animeDeuxPageUne 0.4s forwards 0.2s   ease-out;
 }
 
 @keyframes animeDeuxPageUne {
@@ -236,7 +236,7 @@ body {
 }
 
 .containerLogoAnim{
-      animation: animeQuatrePageUne 0.5s forwards 1.5s   ease-out;
+      animation: animeQuatrePageUne 0.6s forwards 0.6s   ease-out;
 }
 
 @keyframes animeQuatrePageUne {
@@ -322,34 +322,34 @@ body {
 }
 
 @keyframes affichageSupport {
-  0%{opacity: 0;transform: translateY(-100px) ;}
+  0%{opacity: 0;transform: translateY(-300px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
 .affichageDesign{
-  animation:affichageSupport 0.4s ease-in-out 0.2s forwards;
+  animation:affichageSupport 0.4s ease-in-out 0.1s forwards;
 }
 
 @keyframes affichageDesign {
-  0%{opacity: 0;transform: translateY(-100px) ;}
+  0%{opacity: 0;transform: translateY(-300px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
 .affichageTechnologie{
-  animation:affichageTechnologie 0.4s ease-in-out 0.4s forwards;
+  animation:affichageTechnologie 0.4s ease-in-out 0.2s forwards;
 }
 
 @keyframes affichageTechnologie {
-  0%{opacity: 0;transform: translateY(-100px) ;}
+  0%{opacity: 0;transform: translateY(-300px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
 .affichageManagement{
-  animation:affichageManagement 0.4s ease-in-out 0.6s forwards;
+  animation:affichageManagement 0.4s ease-in-out 0.3s forwards;
 }
 
 @keyframes affichageManagement {
-  0%{opacity: 0;transform: translateY(-100px) ;}
+  0%{opacity: 0;transform: translateY(-300px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 

@@ -14,13 +14,13 @@ export default function UseAnimIntro(){
             const fontDelayUn=()=>{
             setTimeout(() => {
                     fontBasiqueUn.current.classList.add("fontAleatoireAnim");
-            }, 400);
+            }, 200);
         }
 
             const fontDelayDeux=()=>{
             setTimeout(() => {
                     fontSpecialUn.current.classList.add("fontAleatoireAnim");
-            }, 200);
+            }, 100);
         }
     
         fontAleatoire.current.classList.add("fontAleatoireAnim"); 

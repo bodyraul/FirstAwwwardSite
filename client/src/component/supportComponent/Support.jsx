@@ -17,7 +17,7 @@ export default function Support() {
     const{divTechnologieEntreprise,supportBtnIntro,divDesigneBrand,divManagamentStartup}= UseAnimSupport();
 
   return (
-    <div style={{fontFamily:"Libre Baskerville"}} className='supp480:h-[1200px] supp768:h-[1300px] supp1024:h-[1500px] supp1600:h-[1700px] w-screen h-[800px] bg-blanc flex flex-col items-center justify-around '>
+    <div style={{fontFamily:"Libre Baskerville"}} className='supp480:h-[1100px] supp768:h-[1200px] supp1024:h-[1300px] supp1600:h-[1400px] w-screen h-[800px] bg-blanc flex flex-col items-center justify-around '>
         <TitreSupport ref={supportBtnIntro} tabUn={allTitreSouligne} tabDeux={allTitreSouligneCache} />
         <TitreCacheSupport refUne={divDesigneBrand} refDeux={titreSouligneUn} refTrois={titreSouligneCacheUn} textUn={"Creation"} textDeux="Label"  ></TitreCacheSupport>         
         <TitreCacheSupport refUne={divTechnologieEntreprise} refDeux={titreSouligneDeux} refTrois={titreSouligneCacheDeux} textUn={"Innovation "} textDeux="Business " ></TitreCacheSupport>

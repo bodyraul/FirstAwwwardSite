@@ -10,7 +10,7 @@ export default function UseAnimSupport(){
     useEffect(() => {
         const scrolling=()=>{
             const tailleEcran = window.innerHeight
-            const hauteurDivTechno = divTechnologieEntreprise.current.getBoundingClientRect().top;
+            const hauteurDivTechno = divManagamentStartup.current.getBoundingClientRect().top;
 
             if(hauteurDivTechno<=tailleEcran){
                 supportBtnIntro.current.classList.add("affichageSupport");
