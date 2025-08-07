@@ -3,7 +3,7 @@ import LiBareDefilement from './LiBareDefilement'
 
 export default function LigneBareDefilement() {
   return (
-    <div  className="animnav flex items-center justify-around w-[2700px] h-full ">
+    <div  className="animnavigation flex items-center justify-around w-[2700px] h-full ">
         <LiBareDefilement text={""}></LiBareDefilement>
         <LiBareDefilement text={"Digital payments for freelancers?"}></LiBareDefilement>
         <LiBareDefilement text={""}></LiBareDefilement>

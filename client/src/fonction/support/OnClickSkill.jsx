@@ -1,9 +1,12 @@
 
-export default function onclickSkill (boolAnim,btnAnim,firstSpan,secondSpan,allTitreSouligne,allTitreSouligneCache,setboolAnim){
+export default function onclickSkill (boolAnim,btnAnim,firstSpan,secondSpan,setboolAnim){
        
         if(boolAnim){
             return;
         }
+        
+        const titreSouligne=document.querySelectorAll('.titreSouligne');
+        const titreCache=document.querySelectorAll('.titreCache');
 
         btnAnim.current.classList.add('animDroiteGaucheContainer2');
         btnAnim.current.classList.remove('animGaucheDroiteContainer2');
@@ -15,14 +18,15 @@ export default function onclickSkill (boolAnim,btnAnim,firstSpan,secondSpan,allT
                 btnAnim.current.textContent = "The Skills";
         }, 200);
 
-        allTitreSouligne.forEach(element => {
-            element.current.classList.remove("animTitreSouligneDescend");
-            element.current.classList.add("animTitreSouligneMonter");
+        
+         titreSouligne.forEach(element => {
+            element.classList.remove("animTitreSouligneDescend");
+            element.classList.add("animTitreSouligneMonter");
         });
         
-        allTitreSouligneCache.forEach(element => {
-            element.current.classList.remove("animTitreCacheSouligneMonter");
-            element.current.classList.add("animTitreSouligneCacheDescend");
+        titreCache.forEach(element => {
+            element.classList.remove("animTitreCacheSouligneMonter");
+            element.classList.add("animTitreSouligneCacheDescend");
         });
         
         setboolAnim(!boolAnim);

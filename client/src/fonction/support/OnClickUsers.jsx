@@ -1,9 +1,11 @@
 
-export default function onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,allTitreSouligne,allTitreSouligneCache,setboolAnim){
+export default function onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,setboolAnim){
 
         if(!boolAnim){
             return;
         }
+        const titreSouligne=document.querySelectorAll('.titreSouligne');
+        const titreCache=document.querySelectorAll('.titreCache');
 
         btnAnim.current.classList.remove('animDroiteGaucheContainer2');
         btnAnim.current.classList.add('animGaucheDroiteContainer2');
@@ -15,14 +17,14 @@ export default function onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,allTi
                 btnAnim.current.textContent = "The Users";
         }, 200);
 
-         allTitreSouligne.forEach(element => {
-            element.current.classList.remove("animTitreSouligneMonter");
-            element.current.classList.add("animTitreSouligneDescend");
+         titreSouligne.forEach(element => {
+            element.classList.remove("animTitreSouligneMonter");
+            element.classList.add("animTitreSouligneDescend");
         });
 
-        allTitreSouligneCache.forEach(element => {
-            element.current.classList.remove("animTitreSouligneCacheDescend");
-            element.current.classList.add("animTitreCacheSouligneMonter");
+        titreCache.forEach(element => {
+            element.classList.remove("animTitreSouligneCacheDescend");
+            element.classList.add("animTitreCacheSouligneMonter");
         });
 
         setboolAnim(!boolAnim);

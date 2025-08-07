@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import onclickSkill from './../../fonction/support/OnClickSkill';
 import onclickUsers from '../../fonction/support/OnClickUsers';
 
-export default function TitreSupport({ref,tabUn,tabDeux}) {
+export default function TitreSupport({ref}) {
     const [boolAnim, setboolAnim] = useState(true); 
     const btnAnim = useRef();
     const firstSpan = useRef();
@@ -19,8 +19,8 @@ export default function TitreSupport({ref,tabUn,tabDeux}) {
             <p ref={btnAnim} className='absolute top-0 left-0 bg-bleuGris w-[55%] h-full rounded-[50px] text-grisClair flex items-center justify-center'>
                 The Skills
             </p>
-            <BtnSpanSupport reference={firstSpan} click={()=>onclickSkill(boolAnim,btnAnim,firstSpan,secondSpan,tabUn,tabDeux,setboolAnim)} text={"The Skills"} ></BtnSpanSupport>
-            <BtnSpanSupport reference={secondSpan} click={()=>onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,tabUn,tabDeux,setboolAnim)} text={"The Users"} ></BtnSpanSupport>
+            <BtnSpanSupport reference={firstSpan} click={()=>onclickSkill(boolAnim,btnAnim,firstSpan,secondSpan,setboolAnim)} text={"The Skills"} ></BtnSpanSupport>
+            <BtnSpanSupport reference={secondSpan} click={()=>onclickUsers(boolAnim,btnAnim,firstSpan,secondSpan,setboolAnim)} text={"The Users"} ></BtnSpanSupport>
         </div>
     </div>
   )

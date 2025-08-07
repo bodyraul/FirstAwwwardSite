@@ -11,7 +11,7 @@ export default function Introduction() {
     <div className="relative supp480:h-[1200px] supp1600:h-screen bg-blancGris w-screen h-[800px]  flex flex-col">
       <Nav/>
       <ImgIntro />
-      <ContenuIntro />
+      <ContenuIntro/>
       <TitreIntro />
       <BackgroundIntro/>
     </div>
