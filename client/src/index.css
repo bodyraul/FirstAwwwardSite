@@ -51,22 +51,21 @@ body {
 
 @keyframes animCuration {
   0% {
-    transform: translateY(-5%);
+    transform: translateY(0%);
     opacity: 1;
   }
   5% {
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
   66%{
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
   71%{
-    transform: translateY(-5%);
+    transform: translateY(0%);
     opacity: 1;
   }
-
 }
 
 @keyframes animNavigation {
@@ -82,7 +81,7 @@ body {
 
 @keyframes animBuilding {
   0% {
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
   5% {
@@ -94,7 +93,7 @@ body {
     opacity: 1;
   }
   38% {
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
 }
@@ -105,11 +104,11 @@ body {
 
 @keyframes animConnecting {
    0% {
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
   33%{
-    transform: translateY(100%);
+    transform: translateY(120%);
     opacity: 0;
   }
   38%{
@@ -210,8 +209,8 @@ body {
 }
 
 @keyframes animeUnePageUne {
-    0%{ opacity: 0; transform: translateY(-200px) translateX(-50%) rotate(15deg);}
-    100%{opacity: 1;  transform: translateY(0px) translateX(-50%)  rotate(5deg);}
+    0%{ opacity: 0; transform: translateY(-200px);}
+    100%{opacity: 1;  transform: translateY(0px);}
     
 }
 

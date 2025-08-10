@@ -8,11 +8,10 @@ import BackgroundIntro from './BackgroundIntro'
 export default function Introduction() {
     
   return (
-    <div className="relative supp480:h-[1200px] supp1600:h-screen bg-blancGris w-screen h-[800px]  flex flex-col">
+    <div className="relative supp480:h-[850px] supp768:h-[1000px] supp1024:h-[1200px] supp1600:h-[1300px] bg-blancGris w-screen h-[600px] flex flex-col ">
       <Nav/>
-      <ImgIntro />
+      <TitreIntro/>
       <ContenuIntro/>
-      <TitreIntro />
       <BackgroundIntro/>
     </div>
   )

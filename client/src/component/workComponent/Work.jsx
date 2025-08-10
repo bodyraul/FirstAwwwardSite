@@ -1,5 +1,5 @@
 import React from 'react'
-import UseAnimScrollWork from '../../CustomHoocks/work/UseAnimScrollWork.jsx'
+import UseAnimScrollWork from '../../CustomHoocks/work/UseAnimScrollWork.js'
 import IntroWork from './IntroWork.jsx';
 import ContenuWork from './ContenuWork.jsx';
 

@@ -2,7 +2,7 @@ import React from 'react'
 import BtnSpanSupport from '../../componentReutilisable/supportComponent/BtnSpanSupport'
 import { useState } from 'react'
 import { useRef } from 'react'
-import onclickSkill from './../../fonction/support/OnClickSkill';
+import onclickSkill from '../../fonction/support/OnClickSkill';
 import onclickUsers from '../../fonction/support/OnClickUsers';
 
 export default function TitreSupport({ref}) {
