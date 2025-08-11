@@ -11,11 +11,11 @@ export default function TitreSupport({ref}) {
     const firstSpan = useRef();
     const secondSpan = useRef();
   return (
-    <div className='h-[160px] flex flex-col items-center justify-around  '>
-        <p ref={ref} className='supp480:text-[20px] supp768:text-[25px] supp1024:text-[30px] supp1600:text-[35px] text-[15px] font-thin transform translate-y-[-150px] opacity-0 transition-all duration-[0.4s] ease-out'>
+    <div className='supp480:h-[90px] supp768:h-[115px] supp1024:h-[130px] supp1600:h-[160px] h-[75px] flex flex-col items-center justify-between  '>
+        <p ref={ref} className='supp480:text-[18px] supp768:text-[23px] supp1024:text-[27px] supp1600:text-[35px] text-[15px] font-thin transform translate-y-[-150px] opacity-0 transition-all duration-[0.4s] ease-out'>
             Who we assist
         </p>
-        <div  className='supp480:w-[250px] supp480:text-[15px] supp480:py-[20px] w-[200px] supp768:text-[18px] supp768:w-[300px] supp768:py-[25px] supp1024:text-[21px] supp1024:w-[330px] supp1024:py-[28px] supp1600:w-[420px] supp1600:py-[33px] supp1600:text-[32px] supp1600:px-[20px] flex items-center justify-between h-[35px] relative py-[0px] px-[25px] text-[10px]  border-[3px] border-bleuGris rounded-[50px]  '>
+        <div  className='supp480:w-[190px] supp480:text-[10px] supp480:py-[17px] supp768:px-[25px] supp768:text-[13px] supp768:w-[230px] supp768:py-[20px] supp1024:px-[40px] supp1024:text-[16px] supp1024:w-[300px] supp1024:py-[24px] supp1600:w-[350px] supp1600:py-[27px] supp1600:text-[20px] supp1600:px-[40px] w-[160px] flex items-center justify-between h-[35px] relative py-[0px] px-[20px] text-[8px]  border-[3px] border-bleuGris rounded-[50px]  '>
             <p ref={btnAnim} className='absolute top-0 left-0 bg-bleuGris w-[55%] h-full rounded-[50px] text-grisClair flex items-center justify-center'>
                 The Skills
             </p>
