@@ -15,12 +15,10 @@ export default function UseAnimSupport(){
 
             if(hauteurDivTechno<=tailleEcran){
                 titreBtn.current.classList.add("affichageSupport");
-                divDesigneBrand.current.classList.add("affichageDesign");
-                divTechnologieEntreprise.current.classList.add("affichageTechnologie");
-                divManagamentStartup.current.classList.add("affichageManagement");
-                setTimeout(() => {
-                     btn.current.style.opacity="1";
-                }, 800);
+                divDesigneBrand.current.classList.add("affichageCreation");
+                divTechnologieEntreprise.current.classList.add("affichageInnovation");
+                divManagamentStartup.current.classList.add("affichageLeadership");
+                btn.current.classList.add("affichageBtn");
                 }
         }
         window.addEventListener("scroll", scrolling);

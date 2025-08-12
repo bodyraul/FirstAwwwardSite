@@ -10,13 +10,13 @@ export default function TitreIntro() {
         <p ref={fontBasiqueUn} className=" supp480:text-[20px] supp480:leading-[25px] supp768:text-[35px] supp768:leading-[45px] supp1024:text-[45px] supp1024:leading-[55px] supp1600:text-[70px] supp1600:leading-[80px] text-[16px] leading-[19px] font-[Cormorant] tracking-[2px]  text-bleuGris transform translate-y-[-200px] opacity-0">a perspective on </p>
         <p ref={fontSpecialUn} className='supp480:text-[20px] supp480:leading-[25px] supp768:text-[35px] supp768:leading-[45px] supp1024:text-[45px] supp1024:leading-[55px] supp1600:text-[70px] supp1600:leading-[80px]  font-[Candal] font-bold  text-bleuGris px-[50px]  text-[16px] leading-[19px]  relative  overflow-hidden transform translate-y-[-200px] opacity-0'>
           <span className='opacity-0 leading-[20px]' >Selection</span> 
-          <SpanInvisible ref={textDisparitionUn} nb={0} />
-          <SpanInvisible ref={textDisparitionDeux} nb={1} />
-          <SpanInvisible ref={textDisparitionTrois} nb={2} />
+          <SpanInvisible ref={textDisparitionUn} nb={0} >Selection</SpanInvisible>
+          <SpanInvisible ref={textDisparitionDeux} nb={1} >Cohesion</SpanInvisible>
+          <SpanInvisible ref={textDisparitionTrois} nb={2} >Connexion</SpanInvisible>
         </p>
         <p ref={fontAleatoire} className='transform translate-y-[-200px] opacity-0'>
-          <SpanVisible nb={0} />
-          <SpanVisible nb={1} />
+          <SpanVisible nb={0} >with a </SpanVisible>
+          <SpanVisible nb={1} >build spirit</SpanVisible>
         </p>
     </div>
   )

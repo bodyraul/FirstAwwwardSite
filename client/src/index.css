@@ -321,38 +321,47 @@ body {
 }
 
 .affichageSupport{
-  animation:affichageSupport 0.4s ease-in-out forwards;
+  animation:affichageSupport 0.3s ease-in-out forwards;
 }
 
 @keyframes affichageSupport {
-  0%{opacity: 0;transform: translateY(-300px) ;}
+  0%{opacity: 0;transform: translateY(-100px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
-.affichageDesign{
-  animation:affichageSupport 0.4s ease-in-out 0.1s forwards;
+.affichageBtn{
+  animation:affichageBtn 0.3s ease-in-out 0.1s forwards;
 }
 
-@keyframes affichageDesign {
-  0%{opacity: 0;transform: translateY(-300px) ;}
+@keyframes affichageBtn {
+  0%{opacity: 0;transform: translateY(-100px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
-.affichageTechnologie{
-  animation:affichageTechnologie 0.4s ease-in-out 0.2s forwards;
+.affichageCreation{
+  animation:affichageSupport 0.3s ease-in-out 0.2s forwards;
 }
 
-@keyframes affichageTechnologie {
-  0%{opacity: 0;transform: translateY(-300px) ;}
+@keyframes affichageCreation {
+  0%{opacity: 0;transform: translateY(-100px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
-.affichageManagement{
-  animation:affichageManagement 0.4s ease-in-out 0.3s forwards;
+.affichageInnovation{
+  animation:affichageInnovation 0.3s ease-in-out 0.3s forwards;
 }
 
-@keyframes affichageManagement {
-  0%{opacity: 0;transform: translateY(-300px) ;}
+@keyframes affichageInnovation {
+  0%{opacity: 0;transform: translateY(-100px) ;}
+  100%{transform: translateY(0px);opacity: 1;}
+}
+
+.affichageLeadership{
+  animation:affichageLeadership 0.3s ease-in-out 0.4s forwards;
+}
+
+@keyframes affichageLeadership {
+  0%{opacity: 0;transform: translateY(-100px) ;}
   100%{transform: translateY(0px);opacity: 1;}
 }
 
