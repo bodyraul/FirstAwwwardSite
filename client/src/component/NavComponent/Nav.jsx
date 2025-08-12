@@ -1,5 +1,5 @@
 import React from 'react'
-import LigneBareDefilement from '../../componentReutilisable/globaleComponent/LigneBareDefilement'
+import LigneBareDefilement from '../../componentReutilisable/navbar/LigneBareDefilement'
 
 export default function Nav() {
   return (
