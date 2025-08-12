@@ -3,9 +3,10 @@ import { useRef } from "react";
 
 export default function UseAnimSupport(){
     const divTechnologieEntreprise = useRef();
-    const supportBtnIntro = useRef();
+    const titreBtn = useRef();
     const divDesigneBrand = useRef();
     const divManagamentStartup = useRef();
+    const btn=useRef();
     
     useEffect(() => {
         const scrolling=()=>{
@@ -13,10 +14,13 @@ export default function UseAnimSupport(){
             const hauteurDivTechno = divManagamentStartup.current.getBoundingClientRect().top;
 
             if(hauteurDivTechno<=tailleEcran){
-                supportBtnIntro.current.classList.add("affichageSupport");
+                titreBtn.current.classList.add("affichageSupport");
                 divDesigneBrand.current.classList.add("affichageDesign");
                 divTechnologieEntreprise.current.classList.add("affichageTechnologie");
                 divManagamentStartup.current.classList.add("affichageManagement");
+                setTimeout(() => {
+                     btn.current.style.opacity="1";
+                }, 800);
                 }
         }
         window.addEventListener("scroll", scrolling);
@@ -25,5 +29,5 @@ export default function UseAnimSupport(){
         
         }
     }, )
-    return {divTechnologieEntreprise,supportBtnIntro,divDesigneBrand,divManagamentStartup}
+    return {divTechnologieEntreprise,titreBtn,divDesigneBrand,divManagamentStartup,btn}
 }

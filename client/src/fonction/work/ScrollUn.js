@@ -4,7 +4,7 @@ export default function scrollUn(){
     let tailleEcran = window.innerHeight;
     let situerEnteteTroisemeContainer = introText.getBoundingClientRect().top;
     
-    if(situerEnteteTroisemeContainer>=tailleEcran*75/100){
+    if(situerEnteteTroisemeContainer>tailleEcran*75/100){
         barAnim.forEach(element => {
             element.style.height="0px";
             element.classList.remove('animBarreTroisiemeContainer');

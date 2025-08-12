@@ -149,7 +149,7 @@ body {
     width: 0px;
   }
   100% {
-    width: 240px;
+    width: 150px;
   }
 }
 
@@ -159,7 +159,7 @@ body {
 
 @keyframes animBarreTroisiemeContainerDeux {
   0% {
-    width: 240px;
+    width: 150px;
     height: 4px;
     opacity: 1;
   }
@@ -218,7 +218,7 @@ body {
 }
 
 .informationGradientAnim{
-      animation: animeUnePageUne 0.4s forwards   ease-in-out;
+      animation: animeUnePageUne 0.3s forwards   ease-in-out;
 }
 
 @keyframes animeUnePageUne {
@@ -228,7 +228,7 @@ body {
 }
 
 .fontAleatoireAnim{
-      animation: animeDeuxPageUne 0.4s forwards 0.2s   ease-out;
+      animation: animeDeuxPageUne 0.3s forwards 0.2s   ease-out;
 }
 
 @keyframes animeDeuxPageUne {
@@ -247,15 +247,6 @@ body {
     
 }
 
-.containerLogoAnim{
-      animation: animeQuatrePageUne 0.6s forwards 0.7s   ease-out;
-}
-
-@keyframes animeQuatrePageUne {
-    0%{  opacity: 0;}
-    100%{opacity: 1; }
-    
-}
 .imgCloverRefAnim{
       animation: animeCinqPageUne 0.5s forwards 1.7s   ease-out;
 }
@@ -274,8 +265,8 @@ body {
 @keyframes animGaucheDroiteContainer2 {
   0%{transform: scale(1);left: 0%;}
   40%{transform: scale(0.7);left: 0%;}
-  60%{left: 45%;transform: scale(0.7);}
-  100%{left: 45%;transform: scale(1);}
+  60%{left: 46%;transform: scale(0.7);}
+  100%{left: 46%;transform: scale(1);}
 }
 
 .animDroiteGaucheContainer2{
@@ -285,8 +276,8 @@ body {
 @keyframes animDroiteGaucheContainer2 {
   0%{transform: scale(1);left: 45%;}
   40%{transform: scale(0.7);left: 45%;}
-  60%{left: 0%;transform: scale(0.7);}
-  100%{left: 0%;transform: scale(1);}
+  60%{left: -1%;transform: scale(0.7);}
+  100%{left: -1%;transform: scale(1);}
 }
 
 .animTitreSouligneCacheDescend{
@@ -369,26 +360,51 @@ body {
 @media screen and (max-width: 1600px) {
   @keyframes animBarreTroisiemeContainer {
     0%{width: 0px;}
-    100%{width: 150px;}
+    100%{width: 80px;}
   }
   
   @keyframes animBarreTroisiemeContainerDeux {
-    0%{width: 150px;height: 4px;opacity: 1;}
+    0%{width: 80px;height: 4px;opacity: 1;}
     60%{opacity: 0;}
     100%{width: 0px;opacity: 0;}
   }
 }
 
-@media screen and (max-width:614px) {
-
-    @keyframes animBarreTroisiemeContainer {
-        0%{width: 0px;}
-        100%{width: 40px;}
-    }
-
-    @keyframes animBarreTroisiemeContainerDeux {
-        0%{width: 40px;height: 4px;opacity: 1;}
-        60%{opacity: 0;}
-        100%{width: 0px;opacity: 0;}
-    }
+@media screen and (max-width: 1024px) {
+  @keyframes animBarreTroisiemeContainer {
+    0%{width: 0px;}
+    100%{width: 60px;}
   }
+  
+  @keyframes animBarreTroisiemeContainerDeux {
+    0%{width: 60px;height: 4px;opacity: 1;}
+    60%{opacity: 0;}
+    100%{width: 0px;opacity: 0;}
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes animBarreTroisiemeContainer {
+    0%{width: 0px;}
+    100%{width: 50px;}
+  }
+  
+  @keyframes animBarreTroisiemeContainerDeux {
+    0%{width: 50px;height: 4px;opacity: 1;}
+    60%{opacity: 0;}
+    100%{width: 0px;opacity: 0;}
+  }
+}
+
+@media screen and (max-width: 480px) {
+  @keyframes animBarreTroisiemeContainer {
+    0%{width: 0px;}
+    100%{width: 30px;}
+  }
+  
+  @keyframes animBarreTroisiemeContainerDeux {
+    0%{width: 30px;height: 4px;opacity: 1;}
+    60%{opacity: 0;}
+    100%{width: 0px;opacity: 0;}
+  }
+}
