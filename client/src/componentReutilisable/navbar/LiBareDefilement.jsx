@@ -3,18 +3,18 @@ import React from 'react'
 export default function LiBareDefilement({text}) {
   if(text){
     return(
-      <li className='text-sm text-center list-none text-vertFonce font-[Whyte]'>
+      <div className='text-sm text-center list-none text-black font-[Whyte]'>
            {text}
-      </li>
+      </div>
     )
   }
   if(!text){
     return(
-      <li className='text-sm text-center list-none text-vertFonce '>
-          <p className='bg-vertFonceDeux rounded-[50%] w-[7px] h-[7px] '>
+      <div className='text-sm text-center list-none text-black '>
+          <p className='bg-black rounded-[50%] w-[7px] h-[7px] '>
               
           </p>
-      </li>
+      </div>
     )
   }
 }

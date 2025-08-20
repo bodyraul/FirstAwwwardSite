@@ -12,7 +12,7 @@ export default function IntroWork() {
             <BarreComponent></BarreComponent>
             <TitreWorkComponent>Work</TitreWorkComponent>               
         </div>
-        <div  className="introText  fontDomine supp480:text-[15px] supp480:leading-[25px] supp768:text-[17px] supp768:leading-[30px] supp1024:text-[20px] supp1024:leading-[35px] supp1600:text-[23px] supp1600:leading-[38px] supp1600:px-[180px] text-[12px] leading-[19px] w-[85%] text-belge py-0 px-[10px] text-center">
+        <div  className="introText  fontDomine supp480:text-[15px] supp480:leading-[25px] supp768:text-[17px] supp768:leading-[30px] supp1024:text-[20px] supp1024:leading-[35px] supp1600:text-[23px] supp1600:leading-[38px] supp1600:px-[180px] text-[12px] leading-[19px] w-[85%] text-black py-0 px-[10px] text-center">
             After many discussions, it's clear we need varied approaches as our network evolves.
         </div>
     </div>

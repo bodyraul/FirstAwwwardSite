@@ -38,7 +38,7 @@ module.exports = {
         "grisMoyen":"#A09D99",
         "grisClair":"#CCCBC6",
         "grisTexte":"#677672",
-        "orangeMarron":"#cc6d51",
+        "orangeMarron":"#D2826A",
         "blancJaune":"#F7F4EE"
       },
     },

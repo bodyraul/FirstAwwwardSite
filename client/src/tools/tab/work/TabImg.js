@@ -1,9 +1,9 @@
-import pingpong from "../../../assets/images/pingpong.png";
-import cercleCarrer from "../../../assets/images/cercleCarrer.png";
-import cuillere from "../../../assets/images/cuillere.png";
-import oeil from "../../../assets/images/oeil.png";
-import main from "../../../assets/images/main.png";
-import train from "../../../assets/images/trains.png";
+import pingpong from "../../../assets/images/pingpong.webp";
+import cercleCarrer from "../../../assets/images/cercleCarrer.webp";
+import cuillere from "../../../assets/images/cuillere.webp";
+import oeil from "../../../assets/images/oeil.webp";
+import main from "../../../assets/images/main.webp";
+import train from "../../../assets/images/trains.webp";
 
 const alt=[
             "représente une raquette blanche.",
