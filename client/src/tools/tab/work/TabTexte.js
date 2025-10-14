@@ -9,13 +9,6 @@
     const titre=[
         "Recruitment","Partnership","Integrated search","Group formation","Senses","Process"]
 
-        console.log(texte[0].length)
-        console.log(texte[1].length)
-        console.log(texte[2].length)
-        console.log(texte[3].length)
-        console.log(texte[4].length)
-        console.log(texte[5].length)
-
     const tabTexte={
         texte:texte,
         titre:titre
