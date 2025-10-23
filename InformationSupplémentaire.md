@@ -1,5 +1,7 @@
 Bonjour à tous, le but ici est de faire un descriptif détaillé de mon application.
 
+j'ai fais l'intégration d'un site que j'ai découvert sur la plateforme Awwward en modifiant le texte et les images graces à chatGPT et Leronardo (ia qui permet nottament de créér des images.).
+
 Performances : 
 
 <img width="2548" height="1269" alt="performancesAwwardUn" src="https://github.com/user-attachments/assets/2b9234d1-7964-485b-92fd-ee859b05b77d" />
