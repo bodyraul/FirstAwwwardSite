@@ -15,7 +15,7 @@ Exemple de composant :
 Ici j'ai créé un composant(Support). 
 Le Custom Hook "UseAnimSupport" permet de gérer l'animation et d'initialiser des states et des ref(via useState et useRef.). 
 Je vais afficher le titre dans le composant "TitreSupport" que l'on va réutiliser dans notre application.
-Les composants TitreCacheSupport ont une variable "nb" en props pour gérer une différence de texte que l'on affiche dans une balise <p> </p>
+On passe l'objet "nb" en props des composant TitreCacheSupport pour gérer une différence de texte que l'on affiche dans une balise <p> </p>.
 Enfin, il y a un composant "ContenuSupport pour afficher du texte.
 
 Site Responsive : 
